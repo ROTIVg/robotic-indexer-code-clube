@@ -1,11 +1,11 @@
 
 import React from "react";
-import { Cpu, Code, Users, Trophy, Robot, BookOpen } from "lucide-react";
+import { Cpu, Code, Users, Trophy, Bot, BookOpen } from "lucide-react";
 
 const Features = () => {
   const features = [
     {
-      icon: <Robot className="w-10 h-10 text-code-green" />,
+      icon: <Bot className="w-10 h-10 text-code-green" />,
       title: "Robótica Educacional",
       description: "Aprendizado prático de construção e programação de robôs."
     },

@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
+import { MapPin, Mail, Phone } from "lucide-react";
 
 const Index = () => {
   useEffect(() => {
