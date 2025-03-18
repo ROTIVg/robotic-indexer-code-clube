@@ -1,22 +1,10 @@
-
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { 
-  Code, 
-  Gamepad, 
-  Bot, 
-  Trophy, 
-  UserCheck, 
-  HandHelping, 
-  Users, 
-  GraduationCap 
-} from "lucide-react";
+import { Code, Gamepad, Bot, Trophy, UserCheck, HandHelping, Users, GraduationCap } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-
 const Atuacao = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navbar />
       
       <section className="py-24 pt-32">
@@ -95,11 +83,7 @@ const Atuacao = () => {
             {/* Imagem central */}
             <Card className="border-0 shadow-lg overflow-hidden md:col-span-1">
               <CardContent className="p-0">
-                <img 
-                  src="/lovable-uploads/5bb61c06-80ae-4971-99c7-8e9a95445fef.png" 
-                  alt="Crianças aprendendo juntas" 
-                  className="w-full h-full object-cover"
-                />
+                <img src="/lovable-uploads/5bb61c06-80ae-4971-99c7-8e9a95445fef.png" alt="Crianças aprendendo juntas" className="w-full h-full object-cover" />
               </CardContent>
             </Card>
 
@@ -164,19 +148,12 @@ const Atuacao = () => {
           </div>
 
           <div className="mt-16 text-center">
-            <a 
-              href="#contato" 
-              className="inline-flex items-center px-8 py-3 bg-code-green text-white rounded-full font-medium hover:bg-code-green/90 transition-colors"
-            >
-              Entre em contato para participar
-            </a>
+            
           </div>
         </div>
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Atuacao;
