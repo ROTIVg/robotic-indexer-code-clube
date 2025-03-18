@@ -34,7 +34,7 @@ const Navbar = () => {
         
         <nav className="hidden md:flex items-center space-x-8">
           <Link to="/atuacao" className="nav-link text-sm font-medium">Atuação</Link>
-          <a href="#games" className="nav-link text-sm font-medium">Games</a>
+          <Link to="/games" className="nav-link text-sm font-medium">Games</Link>
           <a href="#fotos" className="nav-link text-sm font-medium">Fotos</a>
           <a href="#game-challenge" className="nav-link text-sm font-medium">Game Challenge</a>
           <a href="#materiais" className="nav-link text-sm font-medium">Materiais</a>
