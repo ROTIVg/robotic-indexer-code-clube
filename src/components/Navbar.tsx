@@ -36,7 +36,7 @@ const Navbar = () => {
           <Link to="/atuacao" className="nav-link text-sm font-medium">Atuação</Link>
           <Link to="/games" className="nav-link text-sm font-medium">Games</Link>
           <Link to="/fotos" className="nav-link text-sm font-medium">Fotos</Link>
-          <a href="#game-challenge" className="nav-link text-sm font-medium">Game Challenge</a>
+          <Link to="/game-challenge" className="nav-link text-sm font-medium">Game Challenge</Link>
           <a href="#materiais" className="nav-link text-sm font-medium">Materiais</a>
           <a href="#projetos" className="nav-link text-sm font-medium">Projetos</a>
           <a href="#competicoes" className="nav-link text-sm font-medium">Competições</a>
