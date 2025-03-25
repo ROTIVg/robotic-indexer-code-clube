@@ -45,27 +45,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Contato</h3>
-            <ul className="space-y-4">
-              <li className="flex">
-                <MapPin size={20} className="mr-3 text-gray-400" />
-                <span className="text-gray-400">Av. Exemplo, 1234 - Cidade, Estado</span>
-              </li>
-              <li className="flex">
-                <Mail size={20} className="mr-3 text-gray-400" />
-                <a href="mailto:contato@codeclube.com" className="text-gray-400 hover:text-white transition-colors">
-                  contato@codeclube.com
-                </a>
-              </li>
-              <li className="flex">
-                <Phone size={20} className="mr-3 text-gray-400" />
-                <a href="tel:+5511987654321" className="text-gray-400 hover:text-white transition-colors">
-                  +55 (11) 98765-4321
-                </a>
-              </li>
-            </ul>
-          </div>
+          
 
           
         </div>
