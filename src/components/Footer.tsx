@@ -9,9 +9,7 @@ const Footer = () => {
               <span className="text-code-green font-display font-semibold text-2xl">code</span>
               <span className="text-code-red font-display font-semibold text-2xl">clube</span>
             </div>
-            <p className="text-gray-400 mb-6">
-              Desenvolvendo mentes criativas através da robótica, programação e trabalho em equipe.
-            </p>
+            <p className="text-gray-400 mb-6">O Code Clube Votuporanga é um projeto fundado pela Profa. Dra.Luciene Cavalcanti Rodrigues e vários voluntários, parceiros e amigos, visando trazer um mundo de criatividade e tecnologia! Iniciou-se em 2014 com a participação de diversas escolas do município de Votuporanga.</p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Facebook size={20} />
