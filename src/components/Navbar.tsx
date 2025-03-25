@@ -34,7 +34,7 @@ const Navbar = () => {
           <a href="#competicoes" className="nav-link text-sm font-medium">Competições</a>
           <a href="#biblioteca" className="nav-link text-sm font-medium">Biblioteca</a>
           <a href="#noticias" className="nav-link text-sm font-medium">Notícias</a>
-          <a href="#contato" className="contact-btn text-sm font-medium">Contato</a>
+          
         </nav>
         
         {/* Mobile menu button */}
