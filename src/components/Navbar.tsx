@@ -41,6 +41,7 @@ const Navbar = () => {
           <Link to="/atuacao" className="nav-link text-sm font-medium">Atuação</Link>
           <Link to="/games" className="nav-link text-sm font-medium">Games</Link>
           <Link to="/fotos" className="nav-link text-sm font-medium">Fotos</Link>
+          <Link to="/projetos" className="nav-link text-sm font-medium">Projetos</Link>
           <Link to="/game-challenge" className="nav-link text-sm font-medium">Game Challenge</Link>
           <Link to="/materiais" className="nav-link text-sm font-medium">Materiais</Link>
           <a href="#projetos" className="nav-link text-sm font-medium">Projetos</a>
@@ -73,6 +74,7 @@ const Navbar = () => {
               <Link to="/atuacao" className="block py-2 px-3 hover:bg-gray-100 rounded">Atuação</Link>
               <Link to="/games" className="block py-2 px-3 hover:bg-gray-100 rounded">Games</Link>
               <Link to="/fotos" className="block py-2 px-3 hover:bg-gray-100 rounded">Fotos</Link>
+              <Link to="/projetos" className="block py-2 px-3 hover:bg-gray-100 rounded">Projetos</Link>
               <Link to="/game-challenge" className="block py-2 px-3 hover:bg-gray-100 rounded">Game Challenge</Link>
               <Link to="/materiais" className="block py-2 px-3 hover:bg-gray-100 rounded">Materiais</Link>
               <a href="#projetos" className="block py-2 px-3 hover:bg-gray-100 rounded">Projetos</a>

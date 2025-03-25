@@ -1,5 +1,8 @@
+
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+
 const Projects = () => {
   const projects = [{
     title: "Robô Seguidor de Linha",
@@ -53,7 +56,13 @@ const Projects = () => {
         </div>
 
         <div className="mt-12 text-center">
-          
+          <Link 
+            to="/projetos" 
+            className="inline-flex items-center px-6 py-3 rounded-lg bg-code-green text-white hover:bg-code-green/90 transition-colors"
+          >
+            Ver todos os projetos
+            <ArrowRight className="ml-2" size={16} />
+          </Link>
         </div>
       </div>
     </section>;
