@@ -1,6 +1,9 @@
+
 import React from "react";
 import { cn } from "@/lib/utils";
 import { ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";  // Import Link from react-router-dom
+
 const Hero = () => {
   const scrollToNext = () => {
     const featuresSection = document.getElementById("features");
@@ -10,6 +13,7 @@ const Hero = () => {
       });
     }
   };
+
   return <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 z-0">
@@ -41,10 +45,9 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-slide-up" style={{
           animationDelay: "0.3s"
         }}>
-            <a href="#projetos" className="btn-transition bg-code-green hover:bg-code-green/90 text-white px-6 py-3 rounded-lg font-medium">
+            <Link to="/projetos" className="btn-transition bg-code-green hover:bg-code-green/90 text-white px-6 py-3 rounded-lg font-medium">
               Nossos Projetos
-            </a>
-            
+            </Link>
           </div>
         </div>
       </div>
@@ -54,4 +57,5 @@ const Hero = () => {
       </button>
     </section>;
 };
+
 export default Hero;
