@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
@@ -23,18 +24,13 @@ const Navbar = () => {
           </div>
         </Link>
         
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex items-center space-x-8 -ml-4">
           <Link to="/atuacao" className="nav-link text-sm font-medium">Atuação</Link>
           <Link to="/games" className="nav-link text-sm font-medium">Games</Link>
           <Link to="/fotos" className="nav-link text-sm font-medium">Fotos</Link>
           <Link to="/projetos" className="nav-link text-sm font-medium">Projetos</Link>
           <Link to="/game-challenge" className="nav-link text-sm font-medium">Game Challenge</Link>
           <Link to="/materiais" className="nav-link text-sm font-medium">Materiais</Link>
-          
-          
-          
-          
-          
         </nav>
         
         {/* Mobile menu button */}
