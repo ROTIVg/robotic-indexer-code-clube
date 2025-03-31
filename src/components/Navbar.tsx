@@ -31,9 +31,9 @@ const Navbar = () => {
           <Link to="/game-challenge" className="nav-link text-sm font-medium">Game Challenge</Link>
           <Link to="/materiais" className="nav-link text-sm font-medium">Materiais</Link>
           
-          <a href="#competicoes" className="nav-link text-sm font-medium">Competições</a>
-          <a href="#biblioteca" className="nav-link text-sm font-medium">Biblioteca</a>
-          <a href="#noticias" className="nav-link text-sm font-medium">Notícias</a>
+          
+          
+          
           
         </nav>
         
