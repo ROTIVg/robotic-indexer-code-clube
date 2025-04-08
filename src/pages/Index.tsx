@@ -32,9 +32,7 @@ const Index = () => {
       <Projects />
       
       {/* Biblioteca/Materiais Section */}
-      <section id="biblioteca" className="py-20 bg-gray-50">
-        
-      </section>
+      
       
       <Footer />
     </div>;
