@@ -1,9 +1,11 @@
+
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Gamepad, Play, Trophy } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+
 const Games = () => {
   const games = [{
     id: 1,
@@ -24,6 +26,13 @@ const Games = () => {
     image: "/lovable-uploads/11904835-d895-4109-9ddd-a65a90b70a36.png",
     link: "#"
   }];
+
+  const handlePlayGame = (link) => {
+    if (link !== "#") {
+      window.open(link, "_blank");
+    }
+  };
+
   return <div className="min-h-screen">
       <Navbar />
       
@@ -50,7 +59,10 @@ const Games = () => {
                       <div className="relative">
                         <img src={game.image} alt={game.title} className="w-full h-auto object-cover" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
-                          <Button className="bg-code-green hover:bg-code-green/90 gap-2">
+                          <Button 
+                            className="bg-code-green hover:bg-code-green/90 gap-2"
+                            onClick={() => handlePlayGame(game.link)}
+                          >
                             <Play className="h-5 w-5" />
                             Jogar Agora
                           </Button>
@@ -63,15 +75,16 @@ const Games = () => {
                 <div className="w-full md:w-1/2 space-y-4">
                   <h2 className="text-2xl md:text-3xl font-bold">{game.title}</h2>
                   <p className="text-gray-600">{game.description}</p>
-                  <Button className="bg-code-green hover:bg-code-green/90 gap-2">
+                  <Button 
+                    className="bg-code-green hover:bg-code-green/90 gap-2"
+                    onClick={() => handlePlayGame(game.link)}
+                  >
                     <Play className="h-5 w-5" />
                     Jogar Agora
                   </Button>
                 </div>
               </div>)}
           </div>
-
-          
         </div>
       </section>
 
