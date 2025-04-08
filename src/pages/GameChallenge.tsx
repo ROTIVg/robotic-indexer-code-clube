@@ -98,65 +98,7 @@ const GameChallenge = () => {
               </div>
             </div>
 
-            <Tabs defaultValue="games" className="mb-12">
-              <TabsList className="w-full mb-8">
-                <TabsTrigger value="games" className="flex-1">
-                  <Gamepad className="mr-2 h-5 w-5" />
-                  Jogos Scratch
-                </TabsTrigger>
-                <TabsTrigger value="photos" className="flex-1">
-                  <Image className="mr-2 h-5 w-5" />
-                  Fotos do Evento
-                </TabsTrigger>
-              </TabsList>
-              
-              <TabsContent value="games" className="space-y-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {scratchGames.map(game => <Card key={game.id} className="overflow-hidden hover:shadow-lg transition-shadow">
-                      <div className="relative h-48">
-                        <img src={game.image} alt={game.title} className="w-full h-full object-cover" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
-                          <div className="text-white">
-                            <h3 className="text-lg font-bold">{game.title}</h3>
-                            <p className="text-sm opacity-80">Por: {game.author}</p>
-                          </div>
-                        </div>
-                      </div>
-                      <CardContent className="p-4">
-                        <Button className="w-full bg-code-green hover:bg-code-green/90 gap-2">
-                          <ExternalLink className="h-4 w-4" />
-                          Jogar no Scratch
-                        </Button>
-                      </CardContent>
-                    </Card>)}
-                </div>
-                
-                <div className="text-center p-6 bg-gray-50 rounded-xl">
-                  <CardDescription className="mb-4">
-                    Estes são apenas exemplos. Os jogos reais serão adicionados manualmente depois.
-                  </CardDescription>
-                </div>
-              </TabsContent>
-              
-              <TabsContent value="photos" className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                  {eventPhotos.map(photo => <div key={photo.id} className="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                      <div className="relative h-48 sm:h-40 md:h-48">
-                        <img src={photo.image} alt={`Foto do evento ${photo.id}`} className="w-full h-full object-cover" />
-                      </div>
-                      <div className="p-3 bg-white">
-                        <p className="text-sm text-gray-600">{photo.description}</p>
-                      </div>
-                    </div>)}
-                </div>
-                
-                <div className="text-center p-6 bg-gray-50 rounded-xl">
-                  <CardDescription className="mb-4">
-                    As fotos reais do evento serão adicionadas posteriormente.
-                  </CardDescription>
-                </div>
-              </TabsContent>
-            </Tabs>
+            
             
             
           </div>
