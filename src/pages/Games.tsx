@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -12,6 +11,7 @@ const Games = () => {
     title: "Espaço - Gabi",
     description: "Estamos no espaço! Desvie corretamente dos meteoros e faça pontos!",
     image: "/lovable-uploads/471602cb-e6f5-4e02-9b5b-8d6bd2eac972.png",
+    backgroundImage: "/lovable-uploads/7c700854-7426-4bdd-a57a-78a5744fcc64.png",
     link: "https://scratch.mit.edu/projects/700302565/embed"
   }, {
     id: 2,
@@ -58,7 +58,14 @@ const Games = () => {
                     <CardContent className="p-0">
                       <div className="relative">
                         <img src={game.image} alt={game.title} className="w-full h-auto object-cover" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <div 
+                          className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center"
+                          style={{
+                            backgroundImage: game.backgroundImage ? `url(${game.backgroundImage})` : 'none',
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center'
+                          }}
+                        >
                           <Button 
                             className="bg-code-green hover:bg-code-green/90 gap-2"
                             onClick={() => handlePlayGame(game.link)}
