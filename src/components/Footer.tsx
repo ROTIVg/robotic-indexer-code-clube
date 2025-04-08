@@ -1,5 +1,6 @@
 import React from "react";
-import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Youtube, Github } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Youtube, Github, ExternalLink } from "lucide-react";
+
 const Footer = () => {
   return <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 md:px-6 py-12">
@@ -15,7 +16,19 @@ const Footer = () => {
 
           <div>
             <h3 className="text-lg font-semibold mb-6">Links Rápidos</h3>
-            
+            <ul className="space-y-3">
+              <li>
+                <a 
+                  href="http://luciene.pro.br/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center text-gray-400 hover:text-white transition-colors"
+                >
+                  Profa. Dra. Luciene Cavalcanti 
+                  <ExternalLink size={16} className="ml-2" />
+                </a>
+              </li>
+            </ul>
           </div>
 
           
