@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -12,7 +11,7 @@ const Games = () => {
     title: "Espaço - Gabi",
     description: "Estamos no espaço! Desvie corretamente dos meteoros e faça pontos!",
     image: "/lovable-uploads/471602cb-e6f5-4e02-9b5b-8d6bd2eac972.png",
-    link: "https://scratch.mit.edu/projects/700302565/embed"
+    link: "https://scratch.mit.edu/projects/702792981/embed"
   }, {
     id: 2,
     title: "Atravessando a rua - Gabi",
@@ -91,4 +90,5 @@ const Games = () => {
       <Footer />
     </div>;
 };
+
 export default Games;
