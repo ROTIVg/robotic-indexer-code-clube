@@ -83,7 +83,7 @@ const Atuacao = () => {
             {/* Imagem central */}
             <Card className="border-0 shadow-lg overflow-hidden md:col-span-1">
               <CardContent className="p-0">
-                <img src="/lovable-uploads/5bb61c06-80ae-4971-99c7-8e9a95445fef.png" alt="Crianças aprendendo juntas" className="w-full h-full object-cover" />
+                <img alt="Crianças aprendendo juntas" className="w-full h-full object-cover" src="/lovable-uploads/382098ec-6d02-49fb-8c4a-0e3c3fd559a4.jpg" />
               </CardContent>
             </Card>
 
